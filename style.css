@@ -1,0 +1,273 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Nastaliq+Urdu&family=Scheherazade+New&display=swap');
+
+/* /* --- General Styles --- */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F5DC; /* Beige */
+    color: #36454F; /* Charcoal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', 'Lato', sans-serif;
+    color: #808000; /* Olive Green */
+}
+
+a {
+    text-decoration: none;
+    color: #808000;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #D3D3D3; /* Light Gray */
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* --- Hero Section (Homepage) --- */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    color: #BDB76B; /* Dark Khaki */
+    margin-top: 0;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #808000;
+    color: #F5F5DC;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6a6a00;
+}
+
+/* --- Names Grid (Names Page) --- */
+.names-list-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+}
+
+.search-container {
+    margin-bottom: 2rem;
+}
+
+#name-search {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.7rem;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.names-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+       direction: rtl;
+}
+
+.name-card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.name-card:hover {
+    transform: translateY(-5px);
+}
+
+.name-arabic {
+    font-family: 'Scheherazade New', serif;
+    font-size: 2rem;
+    color: #808000;
+    margin: 0;
+    direction: rtl;
+     
+}
+
+.name-english {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #BDB76B;
+    margin: 0.5rem 0;
+}
+
+.meaning-english, .meaning-urdu {
+    margin: 0.2rem 0;
+    color: #36454F;
+}
+
+.meaning-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.1rem;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #D3D3D3;
+    color: #36454F;
+}
+
+/* --- Responsive Design (Mobile-First Approach) --- */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }}
+/* --- About Section Styling --- */
+.about-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+/* --- Download List Page Styling --- */
+.list-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.download-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.names-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-item {
+    display: flex;
+    /* justify-content: space-between; */
+        justify-content: flex-end; /* Items ko right side se start kiya */
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #D3D3D3;
+    direction: rtl;
+    text-align: right;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-name-arabic {
+    font-family: 'Scheherazade New', serif;
+    font-size: 1.5rem;
+    color: #808000;
+    /* margin: 0; */
+    padding-right: 25px;
+    flex: 1;
+  margin: 0 0.5rem 0 0; /* Right margin add kiya */
+       text-align: right; /* Text ko right side align kar diya */
+    direction: rtl; /* Right-to-left direction set ki */
+}
+
+.list-name-english {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #36454F;
+    margin: 0;
+    flex: 1;
+       /* direction: ltr; English text ko left-to-right rakha */
+}
+
+.list-meaning-english, .list-meaning-urdu {
+    margin: 0;
+    flex: 2;
+}
+
+.list-meaning-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    text-align: right;
+       
+    direction: rtl; /* Right-to-left direction set ki */
+}
+
+/* --- Print Styles (for PDF download) --- */
+@media print {
+    body {
+        background-color: #FFFFFF;
+    }
+    header, footer, .download-button-container, .cta-button {
+        display: none;
+    }
+    .list-section {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+    .list-name-arabic {
+        font-size: 1rem;
+    }
+} 
