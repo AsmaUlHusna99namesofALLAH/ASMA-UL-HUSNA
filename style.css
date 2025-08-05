@@ -26,6 +26,9 @@ header {
     background-color: #D3D3D3; /* Light Gray */
     padding: 1rem 2rem;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index:1000;
 }
 
 nav a {
