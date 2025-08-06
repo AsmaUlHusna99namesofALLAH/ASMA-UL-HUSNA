@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Nastaliq+Urdu&family=Scheherazade+New&display=swap');
 
 /* /* --- General Styles --- */
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Lato', sans-serif;
     background-color: #F5F5DC; /* Beige */
@@ -128,7 +131,7 @@ nav a {
 }
 
 .name-arabic {
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Scheherazade New', serif,'Scheherazade New';
     font-size: 2rem;
     color: #808000;
     margin: 0;
