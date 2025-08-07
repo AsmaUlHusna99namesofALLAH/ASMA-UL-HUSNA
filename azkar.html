@@ -3,35 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Azkar (صبح و شام کے اذکار)</title>
+    <title>Daily Azkar</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="names.html">Asma-ul-Husna (اسماء الحسنٰی)</a>
-            <a href="azkar.html">Daily Azkar (صبح و شام کے اذکار)</a>
-            <a href="durood.html">Durood-e-Ibrahimi (دُرُودِ اِبراہِیمی)</a>
-            <a href="list.html">Download PDF (PDF ڈاؤن لوڈ کریں)</a>
-            <a href="contact.html">Contact Us </a>
-        </nav>
+ <nav>
+    <a href="index.html">Home</a>
+    <a href="names.html">99 Names of Allah (اسماء الحسنٰی)</a>
+    <a href="azkar.html">Daily Azkar (صبح و شام کے اذکار)</a>
+    <a href="durood.html">Durood-e-Ibrahimi(دُرُودِ اِبراہِیمی)</a>
+     <a href="list.html">Download PDF (PDF ڈاؤن لوڈ کریں)</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
     </header>
 
-    <main>
-        <h1 class="page-title">Daily Azkar</h1>
-        <h2 class="sub-heading">(صبح و شام کے اذکار)</h2>
-        <p style="text-align: center; margin-top: 2rem;">Content will be added here soon.</p>
+
+    <main class="azkar-page-main">
+        <div class="language-selector-container">
+            <label for="language-select">Select Translation Language:</label>
+            <select id="language-select">
+                <option value="urdu">Urdu</option>
+                <option value="english">English</option>
+            </select>
+        </div>
+
+        <div id="azkar-content">
+            </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Asma-ul-Husna. All Rights Reserved.</p>
-        <p>Made with ❤️</p>
-        <p>May Allah accept our efforts and guide us all.</p>
-        <p>Contact: <a href="mailto:mariammughal450@gmail.com">mariammughal450@gmail.com</a></p>
-    </footer>
+   <footer>
+    <p>&copy; 2025 Asma-ul-Husna. All Rights Reserved.</p>
+    <p>Made with ❤️ </p>
+    <p>May Allah accept our efforts and guide us all.</p>
+    <p>Contact: <a href="mailto:mariammughal450@gmail.com">mariammughal450@gmail.com</a></p>
+</footer>
+
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
